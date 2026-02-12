@@ -9,7 +9,7 @@ public class Program
         var cars = Csv.Read();
         foreach (var car in cars)
         {
-            Console.WriteLine(car.model);
+            Console.WriteLine(car.AllTheInfo());
         }
         /*Controller controller = new Controller();
         controller.Run();*/

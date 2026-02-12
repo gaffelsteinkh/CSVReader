@@ -7,10 +7,10 @@ public class Csv
     public static List<Audi> Read()
     {
         List<Audi> cars = new ();
-        using (var reader = new StreamReader("C:\\Users\\Morten\\Desktop\\Prosjekter\\C# BackEnd\\Modul 1\\Uke 4\\CSVReader\\Models\\audi.csv"))
+        using (var reader = new StreamReader(@"Models\\audi.csv"))
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
-            cars = csv.GetRecords<Audi>().OrderBy(n => n.model).ToList<Audi>();
+            cars = csv.GetRecords<Audi>().OrderBy(n => n.model).ToList();
         }
         return cars;
     }  

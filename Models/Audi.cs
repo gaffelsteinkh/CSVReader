@@ -13,7 +13,12 @@ namespace Formatting
         public double mpg { get ; set ;}
         public double engineSize { get ; set ;}
 
+        public string AllTheInfo()
+        {
+            return ($"{model}\t{year}\t{price} {transmission} {mileage} {fuelType} {tax} {mpg} {engineSize}"); 
+        }
     }
+    
 }
 /*
 var table = new Table().Border(TableBorder.Rounded).Title("Used Audis");
