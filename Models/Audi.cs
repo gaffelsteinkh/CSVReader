@@ -15,7 +15,7 @@ namespace Formatting
 
         public string AllTheInfo()
         {
-            return ($"{model}\t{year}\t{price} {transmission} {mileage} {fuelType} {tax} {mpg} {engineSize}"); 
+            return ($"{model}\t{year}\t{price}\t{transmission}   \t{mileage} \t{fuelType}   \t{tax}\t{mpg}\t{engineSize}"); 
         }
     }
     
