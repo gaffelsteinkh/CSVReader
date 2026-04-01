@@ -20,12 +20,3 @@ namespace Formatting
     }
     
 }
-/*
-var table = new Table().Border(TableBorder.Rounded).Title("Used Audis");
-
-        table.AddColumn("A-series");
-        table.AddColumn("Q-series");
-        table.AddColumn("S-Series");
-        table.AddColumn("TT-Series");
-        table.AddColumn("RS-Series");
-        */
