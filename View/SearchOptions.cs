@@ -11,7 +11,7 @@ public class SearchOpt
         var search = cars.OrderBy(n => n.year).ToList();
         foreach (var car in cars)
         {
-            selectable.AddChoice(cars.OrderBy(n => n.year).ToString());
+            selectable.AddChoice(cars.Where());
         }
 
         return AnsiConsole.Prompt(selectable);

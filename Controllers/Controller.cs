@@ -8,7 +8,6 @@ public class Controller
     {
         view.ShowHeader();
         view.MainMenu(cars);
-
         
     }
 
