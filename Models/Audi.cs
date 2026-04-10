@@ -1,3 +1,6 @@
+using System.Runtime.InteropServices;
+using CsvHelper;
+
 namespace Formatting
 {
         
@@ -17,6 +20,7 @@ namespace Formatting
         {
             return ($"{model}\t{year}\t{price}\t{transmission}   \t{mileage} \t{fuelType}   \t{tax}\t{mpg}\t{engineSize}"); 
         }
+      
     }
     
 }

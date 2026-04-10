@@ -41,7 +41,9 @@ public class SpectreShow
         if (selected == "Search")
         {
             SearchOpt search = new();
-            search.SortByYear(cars);
+            var result = search.Input();
+            
+            search.SortByYear(cars, result);
         }
         if (selected == "Exit")
         {

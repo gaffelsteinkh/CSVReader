@@ -8,10 +8,10 @@ public class Program
     {
         var cars = Csv.Read();
         Controller controller = new Controller();
-        SpectreShow Spec = new();
-        SearchOpt Search = new();
-        //Spec.ShowSearch(cars);
-        Search.SortByYear(cars);
+        controller.Run(cars);
+
+        // SpectreShow Spec = new();
+        // Spec.ShowSearch(cars);
         
        /* string[] csvFile = File.ReadAllLines(@"Models\audi.csv");
         Console.WriteLine("Enter what you wanna search for:");
